@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+html, body {
+  background: #e4e2dd;
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  -webkit-transform: translate(-20%, -20%);
+}
+
+.logo-container {
+    left: 25%;
+    position: absolute;
+    top: 60px;
+    height: 200%
+}
+/*tam log*/
+.logo-container img {
+    width: 90%;
+    height: 100px;
+    /*border-radius: 45%;*/
+    right: 40px;
+}
+
+.card {
+  width: 1000px;
+  height: 700px;
+  background-color: #0a0606;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align:center;
+  
+
+}
+/*mov*/
+.card .additional {
+  position: absolute;
+  width: 390px;
+  height: 100%;
+  background: linear-gradient(#ffffff, #e3e0f7);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+/*tamaño*/
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -5px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #000000;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 55%;
+  right: -45px;
+  height: 3%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 200px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #050505;
+  margin-bottom: 0;
+}
+
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #0a0936;
+  font-size: 1rem;
+  top: 8px;
+  height: 10%
+}
+
+.card .additional .coords .strong {
+  font-weight:bold;
+}
+
+.card .general {
+  width: 300px;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 5rem;
+  right: 10rem;
+  font-size: 0.5em;
+}
+
+.margin-left {
+  margin-left: 200px;
+}
+.d-grid .gap-2{
+    top: 10%;
+    right: 25px;
+    height: 100%;
+
+}
+.botones{
+  margin-left: 20px;
+}
